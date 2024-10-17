@@ -1,11 +1,10 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "../pages/Home";
 import Create from "../pages/Create";
 import Select from "../pages/Select";
 import Delete from "../pages/Delete";
 
 const Router = () => (
-  <BrowserRouter>
+  <BrowserRouter basename="/ReactSpring">
     <Routes>
       <Route index element={<Select />} />
       <Route path="/create" element={<Create />} />
