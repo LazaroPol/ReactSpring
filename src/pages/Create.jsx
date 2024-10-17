@@ -5,6 +5,7 @@ const Create = () => {
   const [name, setName] = useState();
   const handleClickInsert = () => {
     savePersonName({ name });
+    alert("Person created!");
   };
 
   return (

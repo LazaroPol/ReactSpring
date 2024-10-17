@@ -4,6 +4,7 @@ const Delete = () => {
   const [id, setId] = useState();
   const handleClickDelete = () => {
     deletePerson(id);
+    alert("Person deleted!");
   };
   return (
     <div>

@@ -15,29 +15,32 @@ const Select = () => {
   return (
     <>
       <div>
+        <h1>Select your option!</h1>
         <ul>
           <button
             onClick={() => (location.href = "http://localhost:5173/create/")}
           >
-            Create
+            Create person
           </button>
           <br />
           <br />
           <button
             onClick={() => (location.href = "http://localhost:5173/delete/")}
           >
-            Delete
+            Delete person
           </button>
           <br />
           <br />
-          <button onClick={handleClickSelect}>Consulta</button>
+          <button onClick={handleClickSelect}>Select persons</button>
         </ul>
 
-        <h3>Lista de Personas</h3>
+        <h3>Person list</h3>
 
         <ul>
           {persons.map((person) => (
-            <li key={person.id}>{person.name}</li>
+            <li key={person.id}>
+              {person.id} - {person.name}
+            </li>
           ))}
         </ul>
       </div>
