@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { getPersons } from "../services/api";
+import "../styles/styles.css";
 
 const Select = () => {
   const [persons, setPersons] = useState([]);
