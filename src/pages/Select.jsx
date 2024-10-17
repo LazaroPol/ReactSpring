@@ -16,16 +16,23 @@ const Select = () => {
     <>
       <div>
         <ul>
-          <br />
-          <Link className="link" to={"/delete/"}>
-            Delete
-          </Link>
-          <br />
-          <Link className="link" to={"/create/"}>
+          <button
+            onClick={() => (location.href = "http://localhost:5173/create/")}
+          >
             Create
-          </Link>
+          </button>
+          <br />
+          <br />
+          <button
+            onClick={() => (location.href = "http://localhost:5173/delete/")}
+          >
+            Delete
+          </button>
+          <br />
+          <br />
+          <button onClick={handleClickSelect}>Consulta</button>
         </ul>
-        <button onClick={handleClickSelect}>Consulta</button>
+
         <h3>Lista de Personas</h3>
 
         <ul>

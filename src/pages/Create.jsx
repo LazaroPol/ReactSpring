@@ -16,6 +16,11 @@ const Create = () => {
         }}
       />
       <button onClick={handleClickInsert}>Alta</button>
+      <br />
+      <br />
+      <button onClick={() => (location.href = "http://localhost:5173")}>
+        Home
+      </button>
     </div>
   );
 };

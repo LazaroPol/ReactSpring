@@ -15,6 +15,10 @@ const Delete = () => {
       />
       <button onClick={handleClickDelete}>Baja</button>
       <br />
+      <br />
+      <button onClick={() => (location.href = "http://localhost:5173")}>
+        Home
+      </button>
     </div>
   );
 };
