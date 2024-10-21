@@ -13,6 +13,5 @@ const Router = () => (
     </Routes>
   </BrowserRouter>
 );
-d;
 
 export default Router;
