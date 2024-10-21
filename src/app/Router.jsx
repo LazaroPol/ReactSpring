@@ -4,7 +4,7 @@ import Select from "../pages/Select";
 import Delete from "../pages/Delete";
 
 const Router = () => (
-  <BrowserRouter basename="/ReactSpring">
+  <BrowserRouter>
     <Routes>
       <Route index element={<Select />} />
       <Route path="/create" element={<Create />} />
@@ -13,5 +13,6 @@ const Router = () => (
     </Routes>
   </BrowserRouter>
 );
+d;
 
 export default Router;
